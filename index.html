@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!--Fontawsome-->
+    <script src="https://kit.fontawesome.com/2b9f7eac64.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+    <title>Digital Clock</title>
+</head>
+<body id="body" class="dark">
+    <div id="time">
+        <div class="circle" id="circle1" style="--clr:var(--rojo-dark);" >
+            <div class="dots hr_dot"></div>
+            <svg >
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+
+        <div class="circle" id="circle2" style="--clr:var(--amarillo-dark)">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+        
+        <div class="circle"  id="circle3" style="--clr:var(--verde-dark);">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+
+        <div class="ap">
+            <div id="ampm">AM</div>            
+           
+        </div>
+
+
+    </div>
+
+    <label for="">
+        <input type="checkbox" id="input">
+        <div class="icon">
+            <div class="shadow"></div>
+            <div class="iconBox">
+                <i class="fa fa-sun logo"></i>
+            </div>
+        </div>
+    </label>
+
+    <footer>
+        By Lucia Cabrera
+
+        <div class="logos">
+         <a id="logo" href="https://www.linkedin.com/in/blancaluciacabrera/" target="_blank" id="github"><i class="fab fa-github fa-lg"></i></a>
+         <a id="logo" href="https://github.com/cabrera-blanca" target="_blank" id="linkedin"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
